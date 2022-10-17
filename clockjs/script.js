@@ -2,9 +2,9 @@ window.onload = function (){
     var hours = document.getElementById('hours')
     var minuts = document.getElementById('minuts')
     var seconds = document.getElementById('seconds')
-    var hor = 0;
-    var sec = 0;
-    var min = 0;
+    var hor = 23;
+    var sec = 55;
+    var min = 59;
     var interval;
     
     clearInterval(interval)
@@ -38,6 +38,15 @@ window.onload = function (){
             minuts.innerHTML = '0' + 0
             hor++
             hours.innerHTML = '0' + hor
+        }
+
+        if (hor > 9) {
+            hours.innerHTML = hor
+        }
+
+        if(hor >= 24){
+            hor=0
+            hours.innerHTML = '0' + 0
         }
 
 
