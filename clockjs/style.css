@@ -1,0 +1,12 @@
+.containter{
+    border: solid 1px red;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+}
+
+body{
+    background-color: black;
+    color: red;
+}
